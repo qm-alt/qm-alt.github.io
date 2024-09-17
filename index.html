@@ -353,12 +353,15 @@
                         <span class="contact__text">Jl. *** Tangerang Banten Indonesia</span>
                     </div>
 
-                    <form action="https://formspree.io/f/myzgaarv" method="POST" class="contact__form">
+                    <form action="https://formspree.io/f/myzgaarv" method="POST" enctype="multipart/form-data" class="contact__form">
                         <div class="contact__inputs">
                           <input type="text" placeholder="First Name" class="contact__input">
                           <input type="text" placeholder="Last Name" class="contact__input">
                             <input type="text" placeholder="Phone" class="contact__input">
-                            <input type="mail" placeholder="E-mail" class="contact__input">
+                            <label>
+                                Your Email
+                                <input type="email" name="email" class="contact__input">
+                            </label>
                         </div>
 
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
@@ -411,5 +414,6 @@
 
         <!--===== MAIN JS =====-->
         <script src="js/main.js"></script>
+        <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
     </body>
                                                 </html>
