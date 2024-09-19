@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#time {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#date {
+    font-size: 28px;
+}
+
+.calendar {
+    background-color: #rgb(0,0,0); /*rgba(255, 255, 255, 0.1);*/
+    border-radius: 12px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 20px rgb(0,255,238); /*rgba(0, 0, 0, 0.5);*/
+}
+
+#current-month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-gap: 10px;
+    text-align: center;
+}
+
+.day {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.current-day {
+    background-color: #00ffeeb8;
+    color: white;
+}
